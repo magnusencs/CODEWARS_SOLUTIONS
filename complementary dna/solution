@@ -1,0 +1,9 @@
+std::string DNAStrand(const std::string& dna)
+{
+  std::string modified;
+  for (char c : dna) {
+  c == 'A' ? c = 'T' : c != 'T' ? c == 'G' ? c = 'C' : c = 'G' : c = 'A';
+    modified += c;
+  }
+  return modified;
+}
