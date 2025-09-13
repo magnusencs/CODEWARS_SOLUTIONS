@@ -1,0 +1,12 @@
+std::vector<int> digitize(unsigned long n) 
+{      std::string con = std::to_string(n);
+       std::vector<int> res;
+        int con_;
+        for (char c : con)
+          {
+        con_ = c-'0';
+          res.insert(res.begin(), con_);
+          
+        }
+      return res;
+    }
