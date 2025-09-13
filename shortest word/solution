@@ -1,0 +1,26 @@
+
+int find_short(std::string str) 
+{ 
+/*int minindex= 0;
+  std::vector<unsigned> list;
+ for (auto i : str){
+   if (i == ' ')
+   {list.push_back(i);
+    for (int j = 0; j<list.size(); j++)
+    { std::vector <int> result;
+     result= std::sort(list.begin(), list.end());
+     
+     }
+   } 
+   } return result[0];
+   okay-that's the shittiest, incorrect code ive ever written. */ 
+ std::string word;
+  int minlength = std::numeric_limits<int>::max();
+  std::stringstream c (str);
+    while (c>>word){
+      if (minlength>word.length()){
+       minlength= word.length()  ;
+      }
+} return minlength;
+   
+}
