@@ -1,0 +1,19 @@
+//okay, this is just a sum of series.
+class Arge
+{
+  public:
+  static int nbYear(int p0, double percent, int aug, int p)
+  {
+    int counter = 0;
+    const auto div = 100.00;
+    
+    while (p0 < p) 
+    {
+     p0 =  p0 + static_cast<int>((percent/div)*p0)+aug;
+      
+      counter ++;
+    }
+    return counter;
+    }  
+};
+// a little build up loss of a value caused a wrong output eventually, that's the issue, smh.
