@@ -1,0 +1,16 @@
+
+std::vector<unsigned int> removeSmallest(const std::vector<unsigned int>& numbers) {
+  if (numbers.empty()){
+    return std::vector<unsigned int>();
+  } int minindex=0;
+   for (int i = 1; i< numbers.size(); i++){ 
+     if (numbers[i]<numbers[minindex]){
+       minindex = i;
+     }
+   } std::vector<unsigned>result;
+  for (int i=0; i<numbers.size(); i++){
+    if(i != minindex){
+      result.push_back(numbers[i]);
+    }
+  } return result;
+}
