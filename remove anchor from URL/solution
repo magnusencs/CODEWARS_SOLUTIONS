@@ -1,0 +1,11 @@
+std::string replaceAll(std::string str) {
+        std::string link;
+  for (char &c : str) {
+   link += c;
+    if (c == '#'){
+     link.pop_back();
+      break;
+    }
+  }
+  return link;  
+}
