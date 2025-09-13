@@ -1,0 +1,21 @@
+
+class ASum
+{
+  public:
+  static long long findNb(long long m)
+  {
+  long long n = 0;
+    long long volumeSum = 0;
+
+    while (volumeSum < m) {
+        n++;
+        volumeSum += n*n*n;
+    }
+   if (volumeSum == m) {
+        return n;
+    } else {
+        return -1;
+    } 
+    
+    }
+};
