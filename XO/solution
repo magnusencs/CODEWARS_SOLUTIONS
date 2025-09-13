@@ -1,0 +1,15 @@
+bool XO(const std::string& str) {
+    int countX = 0;
+    int countO = 0;
+
+   for (int i = 0; i<= str.size(); ++i){
+     
+      if (tolower(str[i])== 'x') {
+        countX++;
+      }
+     else if (tolower(str[i])== 'o') {
+        countO++;
+      }
+}
+    return countX == countO;
+}
