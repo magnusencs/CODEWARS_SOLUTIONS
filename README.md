@@ -1,3 +1,7 @@
 # KATA_SOLUTIONS
-so, this is where all the solutions i've submitted on codewars/leetcode questions, keep in mind i didnt revised it, so this is not the best code you've ever seen- it purely came from my own.
-oh- also the code above is just a function, you need to create int main yourself to call it, because im lazy.
+This repository contains all the solutions I’ve submitted on **Codewars** and **LeetCode** challenges.  
+
+⚠️ Keep in mind:
+- I didn’t revise or optimize most of these — so don’t expect “perfect” code here.  
+- These solutions are my raw attempts, straight from my own thinking process.  
+- Most of the code snippets are just functions — you’ll need to create your own `int main()` to run them (I’m lazy, sorry 😅).  
