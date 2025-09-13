@@ -1,0 +1,26 @@
+//this is my favorite question so far. so fun.
+class Accumul
+{
+public:
+    static std::string accum(const std::string &s)
+      {
+  std::string sec =  s.substr(1);
+  std::string result;
+   
+      for (int i = 0; i<sec.size(); ++i)
+        {
+        result += toupper(sec[i]);
+        for (int j = 0; j<=i; j++)
+          { 
+             result+=tolower(sec[i]);
+        }
+        if (i != s.size()-2) {
+           result+='-';  
+        }
+      }
+       result.insert(0, 1, toupper(s[0]));
+        result.insert(1, 1, '-');
+      return result;
+      
+        }
+    };
