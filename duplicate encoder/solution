@@ -1,0 +1,21 @@
+std::string duplicate_encoder(const std::string& word){
+    std::unordered_map<char, int> char_count;
+    
+    for (char ch : word) {
+        char lowercase_ch = std::tolower(ch);
+        char_count[lowercase_ch]++;
+    }
+    
+    std::string result;
+    for (char ch : word) {
+        char lowercase_ch = std::tolower(ch);
+        
+        if (char_count[lowercase_ch] == 1) {
+            result += "(";
+        } else {
+            result += ")";
+        }
+    }
+    
+    return result;
+}
